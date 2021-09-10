@@ -1,0 +1,9 @@
+<launch>
+  <node pkg="simple_topic_cpp" exec="simple_pub" name="simple_pub" output="screen">
+    <remap from="chatter" to="new_chatter"/>
+  </node>
+
+  <node pkg="simple_topic_cpp" exec="simple_sub" name="simple_sub" output="screen">
+    <remap from="chatter" to="new_chatter"/>
+  </node>
+</launch>

@@ -1,0 +1,10 @@
+
+<launch>
+  <!-- <node pkg="simple_param_cpp" exec="simple_param" name="simple_param" output="screen">
+    <param name="robot_mass" value="3.0"/>
+  </node> -->
+
+  <node pkg="simple_param_cpp" exec="simple_param" name="simple_param" output="screen">
+    <param from="$(find-pkg-share simple_launch_cpp)/param.yaml"/>
+  </node>
+</launch>

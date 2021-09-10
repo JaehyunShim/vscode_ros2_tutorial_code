@@ -1,0 +1,5 @@
+simple_param:
+  ros__parameters:
+    robot_name: "LaunchBot"
+    robot_mass: 10.0
+    robot_number: 5
